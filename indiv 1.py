@@ -3,7 +3,10 @@
 
 def fun1(type_='max'):
     def fun2(lst):
-        return eval(f'{type_}(lst)')
+        if type_ == 'max':
+            return max(lst)
+        elif type_ == 'min':
+            return min(lst)
     print(type_)
     return fun2
 
